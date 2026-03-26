@@ -305,7 +305,6 @@
         document.getElementById('userName').textContent = '';
     }
 }
-
         function showAuthConfirmation(name) { const t = document.getElementById('authToast'); document.getElementById('toastTitle').textContent = 'Authentication Confirmed!'; document.getElementById('toastMessage').textContent = `Welcome, ${name}! You have full access.`; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 4000); }
 
         document.getElementById('authModal').addEventListener('click', e => { if (e.target === document.getElementById('authModal')) closeModal(); });
